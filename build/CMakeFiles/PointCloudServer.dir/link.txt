@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/PointCloudServer.dir/src/main.cpp.o CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o -o PointCloudServer  -Wl,--whole-archive /usr/local/lib/libdraco.a -Wl,--no-whole-archive

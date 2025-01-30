@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/PointCloudCompressor.dir/src/main.cpp.o CMakeFiles/PointCloudCompressor.dir/src/point_cloud_compressor.cpp.o -o PointCloudCompressor  -ldraco

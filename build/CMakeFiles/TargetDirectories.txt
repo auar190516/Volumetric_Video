@@ -1,0 +1,3 @@
+/home/ljp/test/build/CMakeFiles/PointCloudServer.dir
+/home/ljp/test/build/CMakeFiles/edit_cache.dir
+/home/ljp/test/build/CMakeFiles/rebuild_cache.dir
