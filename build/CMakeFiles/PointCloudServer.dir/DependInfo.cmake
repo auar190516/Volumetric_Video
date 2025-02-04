@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/ljp/test/src/main.cpp" "CMakeFiles/PointCloudServer.dir/src/main.cpp.o" "gcc" "CMakeFiles/PointCloudServer.dir/src/main.cpp.o.d"
-  "/home/ljp/test/src/point_cloud_compressor.cpp" "CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o" "gcc" "CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o.d"
+  "/home/ljp/GraduationProject/PointCloudServer/src/main.cpp" "CMakeFiles/PointCloudServer.dir/src/main.cpp.o" "gcc" "CMakeFiles/PointCloudServer.dir/src/main.cpp.o.d"
+  "/home/ljp/GraduationProject/PointCloudServer/src/point_cloud_compressor.cpp" "CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o" "gcc" "CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

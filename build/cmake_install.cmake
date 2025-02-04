@@ -1,4 +1,4 @@
-# Install script for directory: /home/ljp/test
+# Install script for directory: /home/ljp/GraduationProject/PointCloudServer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/ljp/test/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/ljp/GraduationProject/PointCloudServer/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljp/test
+CMAKE_SOURCE_DIR = /home/ljp/GraduationProject/PointCloudServer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljp/test/build
+CMAKE_BINARY_DIR = /home/ljp/GraduationProject/PointCloudServer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PointCloudServer.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/PointCloudServer.dir/progress.make
 include CMakeFiles/PointCloudServer.dir/flags.make
 
 CMakeFiles/PointCloudServer.dir/src/main.cpp.o: CMakeFiles/PointCloudServer.dir/flags.make
-CMakeFiles/PointCloudServer.dir/src/main.cpp.o: /home/ljp/test/src/main.cpp
+CMakeFiles/PointCloudServer.dir/src/main.cpp.o: /home/ljp/GraduationProject/PointCloudServer/src/main.cpp
 CMakeFiles/PointCloudServer.dir/src/main.cpp.o: CMakeFiles/PointCloudServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ljp/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PointCloudServer.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PointCloudServer.dir/src/main.cpp.o -MF CMakeFiles/PointCloudServer.dir/src/main.cpp.o.d -o CMakeFiles/PointCloudServer.dir/src/main.cpp.o -c /home/ljp/test/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ljp/GraduationProject/PointCloudServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PointCloudServer.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PointCloudServer.dir/src/main.cpp.o -MF CMakeFiles/PointCloudServer.dir/src/main.cpp.o.d -o CMakeFiles/PointCloudServer.dir/src/main.cpp.o -c /home/ljp/GraduationProject/PointCloudServer/src/main.cpp
 
 CMakeFiles/PointCloudServer.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PointCloudServer.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ljp/test/src/main.cpp > CMakeFiles/PointCloudServer.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ljp/GraduationProject/PointCloudServer/src/main.cpp > CMakeFiles/PointCloudServer.dir/src/main.cpp.i
 
 CMakeFiles/PointCloudServer.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PointCloudServer.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ljp/test/src/main.cpp -o CMakeFiles/PointCloudServer.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ljp/GraduationProject/PointCloudServer/src/main.cpp -o CMakeFiles/PointCloudServer.dir/src/main.cpp.s
 
 CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o: CMakeFiles/PointCloudServer.dir/flags.make
-CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o: /home/ljp/test/src/point_cloud_compressor.cpp
+CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o: /home/ljp/GraduationProject/PointCloudServer/src/point_cloud_compressor.cpp
 CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o: CMakeFiles/PointCloudServer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ljp/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o -MF CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o.d -o CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o -c /home/ljp/test/src/point_cloud_compressor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/ljp/GraduationProject/PointCloudServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o -MF CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o.d -o CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o -c /home/ljp/GraduationProject/PointCloudServer/src/point_cloud_compressor.cpp
 
 CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ljp/test/src/point_cloud_compressor.cpp > CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ljp/GraduationProject/PointCloudServer/src/point_cloud_compressor.cpp > CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.i
 
 CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ljp/test/src/point_cloud_compressor.cpp -o CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ljp/GraduationProject/PointCloudServer/src/point_cloud_compressor.cpp -o CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.s
 
 # Object files for target PointCloudServer
 PointCloudServer_OBJECTS = \
@@ -109,8 +109,13 @@ PointCloudServer: CMakeFiles/PointCloudServer.dir/src/main.cpp.o
 PointCloudServer: CMakeFiles/PointCloudServer.dir/src/point_cloud_compressor.cpp.o
 PointCloudServer: CMakeFiles/PointCloudServer.dir/build.make
 PointCloudServer: /usr/local/lib/libdraco.a
+PointCloudServer: /usr/lib/x86_64-linux-gnu/libboost_system.so
+PointCloudServer: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+PointCloudServer: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+PointCloudServer: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+PointCloudServer: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
 PointCloudServer: CMakeFiles/PointCloudServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ljp/test/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable PointCloudServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/ljp/GraduationProject/PointCloudServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable PointCloudServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PointCloudServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -122,6 +127,6 @@ CMakeFiles/PointCloudServer.dir/clean:
 .PHONY : CMakeFiles/PointCloudServer.dir/clean
 
 CMakeFiles/PointCloudServer.dir/depend:
-	cd /home/ljp/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljp/test /home/ljp/test /home/ljp/test/build /home/ljp/test/build /home/ljp/test/build/CMakeFiles/PointCloudServer.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/ljp/GraduationProject/PointCloudServer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljp/GraduationProject/PointCloudServer /home/ljp/GraduationProject/PointCloudServer /home/ljp/GraduationProject/PointCloudServer/build /home/ljp/GraduationProject/PointCloudServer/build /home/ljp/GraduationProject/PointCloudServer/build/CMakeFiles/PointCloudServer.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/PointCloudServer.dir/depend
 

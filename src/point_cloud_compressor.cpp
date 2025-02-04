@@ -10,8 +10,9 @@
 #include "draco/io/point_cloud_io.h"
 #include <string>
 #include <memory>
+#include <vector>
 
-void compressPointCloud(const std::string &input_file, const std::string &output_file) {
+void compressPointCloud(const std::string &input_file, std::vector<char> &compressed_data) {
     // Step 1: Load the point cloud from the input PLY file.
     auto maybe_pc = draco::ReadPointCloudFromFile(input_file);
     if (!maybe_pc.ok()) {
@@ -42,12 +43,10 @@ void compressPointCloud(const std::string &input_file, const std::string &output
     }
     timer.Stop();
 
-    // Step 4: Write the encoded point cloud data to the output file.
-    if (!draco::WriteBufferToFile(buffer.data(), buffer.size(), output_file)) {
-        printf("Failed to write the encoded point cloud to the output file: %s\n", output_file.c_str());
-        return;
-    }
+    // Step 4: 将编码后的数据存储到内存中
+    compressed_data.resize(buffer.size());
+    std::memcpy(compressed_data.data(), buffer.data(), buffer.size());
 
-    printf("Point cloud successfully encoded and saved to %s (%" PRId64 " ms to encode).\n", output_file.c_str(), timer.GetInMs());
+    // printf("Point cloud successfully encoded and saved to %s (%" PRId64 " ms to encode).\n", output_file.c_str(), timer.GetInMs());
     printf("Encoded size = %zu bytes\n\n", buffer.size());
 }

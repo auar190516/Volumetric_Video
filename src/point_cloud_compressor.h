@@ -2,7 +2,7 @@
 #define POINT_CLOUD_COMPRESSOR_H
 
 #include <string>
-
-void compressPointCloud(const std::string &input_file, const std::string &output_file);
+#include <vector>
+void compressPointCloud(const std::string &input_file, std::vector<char> &compressed_data);
 
 #endif  // POINT_CLOUD_COMPRESSOR_H
