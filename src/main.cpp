@@ -6,6 +6,8 @@
 
 void sendCompressedData(boost::asio::ip::tcp::socket &socket, const std::vector<char> &data) {
     try {
+        std::size_t data_size = data.size();
+        boost::asio::write(socket, boost::asio::buffer(&data_size, sizeof(data_size)));
         boost::asio::write(socket, boost::asio::buffer(data));
         std::cout << "Sent compressed data to client." << std::endl;
     } catch (const std::exception &e) {
