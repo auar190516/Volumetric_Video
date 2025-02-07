@@ -6,10 +6,16 @@
 
 void sendCompressedData(boost::asio::ip::tcp::socket &socket, const std::vector<char> &data) {
     try {
-        std::size_t data_size = data.size();
+        int data_size = data.size();
+
+        std::cout << "compressed data length: " << data_size << std::endl;
         boost::asio::write(socket, boost::asio::buffer(&data_size, sizeof(data_size)));
-        boost::asio::write(socket, boost::asio::buffer(data));
-        std::cout << "Sent compressed data to client." << std::endl;
+        std::size_t bytes_sent = boost::asio::write(socket, boost::asio::buffer(data));
+        if (bytes_sent == data.size()) {
+            std::cout << "Sent compressed data to client." << std::endl;
+        } else {
+            std::cerr << "Failed to send full data: sent " << bytes_sent << " bytes, expected " << data.size() << " bytes." << std::endl;
+        }
     } catch (const std::exception &e) {
         std::cerr << "Error sending data: " << e.what() << std::endl;
     }
@@ -41,8 +47,8 @@ void startServer(const std::string &input_file, int port) {
 }
 
 int main() {
-    std::string input_file = "../build/Box.ply";  // 假设文件路径
-    int port = 12345;  // 服务器监听的端口
+    std::string input_file = "../build/longdress_vox10_1148.ply";  // 假设文件路径
+    int port = 12348;  // 服务器监听的端口
 
     startServer(input_file, port);
 
