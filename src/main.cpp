@@ -22,7 +22,11 @@ void sendCompressedData(boost::asio::ip::tcp::socket &socket, const std::vector<
 }
 
 void handleClient(boost::asio::ip::tcp::socket socket, const std::vector<char> &compressed_data) {
-    sendCompressedData(socket, compressed_data);
+    while (true) {
+        sendCompressedData(socket, compressed_data);
+        // 休眠5秒
+        std::this_thread::sleep_for(std::chrono::seconds(15));
+    }
 }
 
 void startServer(const std::string &input_file, int port) {
@@ -54,4 +58,3 @@ int main() {
 
     return 0;
 }
-
